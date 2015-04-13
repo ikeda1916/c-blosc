@@ -37,6 +37,7 @@ set(SOURCES blosc.c blosclz.c shuffle.c)
 set(lib_dir lib${LIB_SUFFIX})
 set(version_string ${BLOSC_VERSION_MAJOR}.${BLOSC_VERSION_MINOR}.${BLOSC_VERSION_PATCH})
 
+add_definitions(-DWINPTHREAD_STATIC)
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 if(WIN32)
     # try to use the system library

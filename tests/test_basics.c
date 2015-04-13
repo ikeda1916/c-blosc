@@ -9,6 +9,7 @@
   See LICENSES/BLOSC.txt for details about copyright and rights to use.
 **********************************************************************/
 
+#include <stdint.h>
 #include "test_common.h"
 
 int tests_run = 0;
