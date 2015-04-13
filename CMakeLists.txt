@@ -83,7 +83,7 @@ option(DEACTIVATE_ZLIB
 option(PREFER_EXTERNAL_COMPLIBS
     "When found, use the installed compression libs instead of included sources." ON)
 
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
 if(NOT PREFER_EXTERNAL_COMPLIBS)
     message(STATUS "Finding external libraries disabled.  Using internal sources.")

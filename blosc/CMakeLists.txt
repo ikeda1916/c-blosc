@@ -1,7 +1,7 @@
 # a simple way to detect that we are using CMAKE
 add_definitions(-DUSING_CMAKE)
 
-set(INTERNAL_LIBS ${CMAKE_SOURCE_DIR}/internal-complibs)
+set(INTERNAL_LIBS ${PROJECT_SOURCE_DIR}/internal-complibs)
 
 # includes
 if(NOT DEACTIVATE_LZ4)
